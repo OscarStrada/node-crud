@@ -1,12 +1,4 @@
-import express from "express";
-
-// settings
-const app = express();
-app.set("port", process.env.PORT || 3000);
-
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+import app from "./app";
 
 // starting server
 app.listen(app.get("port"), () => {
